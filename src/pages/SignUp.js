@@ -20,7 +20,7 @@ function Signup() {
   return (
     <div className="signup-container">
       <div className="signup-box">
-        <h1 className="logo">Groceries</h1>
+        <h1 className="logo">FoodApp</h1>
         <form onSubmit={handleSubmit} data-testid="signup-form">
           <input
             type="text"

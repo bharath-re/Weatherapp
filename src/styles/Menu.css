@@ -1,0 +1,16 @@
+.menu-container {
+    height: 100vh;
+    /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    background-color: #f9f9f9;
+    /* Optional: for visual clarity */
+}
+
+.menu-content {
+    font-size: 2rem;
+    font-weight: bold;
+}
