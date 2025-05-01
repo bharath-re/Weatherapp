@@ -1,42 +1,54 @@
 .menu-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border: 1px solid #eee;
-    border-radius: 8px;
-    padding: 12px;
-    width: 220px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fffaf4;
+    padding: 20px;
     margin: 10px;
-    background-color: #fff;
-    transition: transform 0.2s;
+    border-radius: 6px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
 }
 
-.menu-card:hover {
-    transform: scale(1.02);
+.menu-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.menu-text h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #4b2e2e;
+}
+
+.menu-text p {
+    font-size: 14px;
+    color: #5c4a4a;
 }
 
 .menu-image {
-    width: 220px;
-    /* Smaller image size */
-    height: 140px;
-    /* Maintain aspect ratio */
+    width: 150px;
+    height: 120px;
     object-fit: cover;
-    border-radius: 6px;
-    margin-bottom: 10px;
+    border-radius: 4px;
 }
 
-.menu-details h3 {
-    margin: 0;
-    font-size: 1.1rem;
-}
-
-.menu-details p {
-    font-size: 0.9rem;
-    color: #555;
-}
-
-.menu-price {
-    display: block;
-    margin-top: 8px;
+.add-to-cart-btn {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
     font-weight: bold;
-    color: #27ae60;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.add-to-cart-btn:hover {
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }

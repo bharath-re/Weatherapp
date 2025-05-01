@@ -1,14 +1,15 @@
 import React from "react";
 import "../styles/MenuCard.css";
+
 function MenuCard({ item }) {
   return (
-    <div className="menu-card" key={item.id}>
-      <img src={item.image} alt={item.name} className="menu-image" />
-      <div className="menu-details">
+    <div className="menu-card">
+      <div className="menu-text">
         <h3>{item.name}</h3>
         <p>{item.description}</p>
-        <span className="menu-price">{item.price}</span>
       </div>
+      <img src={item.image} alt={item.name} className="menu-image" />
+      <button className="add-to-cart-btn">Add to Cart</button>
     </div>
   );
 }
