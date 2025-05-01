@@ -1,18 +1,19 @@
-import React, { useState } from 'react';
-import '../styles/SignUp.css'
+import React, { useState } from "react";
+import "../styles/SignUp.css";
+import { Link } from "react-router-dom";
 function Signup() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Signup submitted', { email, password });
-    setEmail('');
-    setPassword('');
+    console.log("Signup submitted", { email, password });
+    setEmail("");
+    setPassword("");
   };
 
   const handleFacebookLogin = () => {
-    window.location.href = 'https://www.facebook.com';
+    window.location.href = "https://www.facebook.com";
   };
 
   return (
@@ -35,7 +36,7 @@ function Signup() {
             required
           />
           <button type="submit" data-testid="signup-button">
-           sign in
+            sign in
           </button>
         </form>
 
@@ -44,14 +45,14 @@ function Signup() {
         <button
           type="button"
           className="facebook-login"
-          onClick={handleFacebookLogin} // Facebook login redirect
+          onClick={handleFacebookLogin}
         >
           Log in with Facebook
         </button>
       </div>
 
       <div className="login-box">
-        Already have an account? <a href="/signup">Log in</a>
+        want to create a account <Link to="/signup"> Sign up</Link>
       </div>
     </div>
   );

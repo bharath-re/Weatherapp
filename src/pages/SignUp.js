@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import '../styles/SignUp.css';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "../styles/SignUp.css";
 
 function Signup() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Signup submitted', { name, email, username, password });
-    setName('');
-    setEmail('');
-    setUsername('');
-    setPassword('');
+    console.log("Signup submitted", { name, email, username, password });
+    setName("");
+    setEmail("");
+    setUsername("");
+    setPassword("");
   };
 
   return (

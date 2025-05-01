@@ -22,3 +22,26 @@
     padding: 20px;
     justify-content: center;
 }
+
+.search-container {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.search-input {
+    padding: 12px 20px;
+    width: 70%;
+    max-width: 500px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-input:focus {
+    border-color: #ff6f61;
+    box-shadow: 0 4px 12px rgba(255, 111, 97, 0.4);
+    background-color: #fffdfa;
+}

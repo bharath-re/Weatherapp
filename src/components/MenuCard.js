@@ -7,6 +7,7 @@ function MenuCard({ item }) {
       <div className="menu-text">
         <h3>{item.name}</h3>
         <p>{item.description}</p>
+        <p>{item.price}</p>
       </div>
       <img src={item.image} alt={item.name} className="menu-image" />
       <button className="add-to-cart-btn">Add to Cart</button>
