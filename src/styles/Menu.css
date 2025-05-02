@@ -45,3 +45,17 @@
     box-shadow: 0 4px 12px rgba(255, 111, 97, 0.4);
     background-color: #fffdfa;
 }
+
+
+.filter-icon {
+    margin-left: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #555;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.filter-icon:hover {
+    color: #007bff;
+    transform: scale(1.1);
+}
