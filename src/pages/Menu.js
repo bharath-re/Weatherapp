@@ -7,13 +7,18 @@ import SearchBar from "../components/SearchBar";
 function Menu() {
   const [searchQuery, setSearchQuery] = useState("");
   const [filter, setFilter] = useState("");
+  const [cart, setCart] = useState([]);
 
+  const handleAddToCart = (item) => {
+    setCart((prevCart) => [...prevCart, item]);
+    alert(`${item.name} added to cart!`);
+  };
   const filteredItems = menuItems.filter((item) =>
     item.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   const filterlist = (items) => {
-    const sorted = [...items]; // clone to avoid mutation
+    const sorted = [...items];
     if (filter === "low-price") {
       return sorted.sort((a, b) => a.price - b.price);
     } else if (filter === "high-price") {
@@ -34,9 +39,15 @@ function Menu() {
         filter={filter}
         setFilter={setFilter}
       />
+      <p>Total Items in Cart: {cart.length}</p>
+
       <div className="menu-grid">
         {sortedMenuItems.map((item) => (
-          <MenuCard key={item.id} item={item} />
+          <MenuCard
+            key={item.id}
+            item={item}
+            handleAddToCart={handleAddToCart}
+          />
         ))}
       </div>
     </>

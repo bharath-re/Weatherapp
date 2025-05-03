@@ -5,7 +5,9 @@ import Menu from "./pages/Menu";
 import {
   Careers,
   Cart,
+  ErrorPage,
   GiftCards,
+  Home,
   Locations,
   Reservations,
   Rewards,
@@ -19,6 +21,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/Signin" element={<SignIn />} />
+        <Route path="/" element={<Home />} />
         <Route path="/Signup" element={<SignUp />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/locations" element={<Locations />} />
@@ -27,6 +30,7 @@ function App() {
         <Route path="/Careers" element={<Careers />} />
         <Route path="/Rewards" element={<Rewards />} />
         <Route path="/Cart" element={<Cart />} />
+        <Route path="/*" element={<ErrorPage />} />
       </Routes>
     </Router>
   );
