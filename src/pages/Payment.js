@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Payment.css";
+import { useSelector } from "react-redux";
 
 const cities = [
   "New York",
@@ -28,6 +29,9 @@ function Payment() {
   const [city, setCity] = useState("");
   const [location, setLocation] = useState("");
   const [paymentMethod, setPaymentMethod] = useState("Credit Card");
+  const { items, totalQuantity, totalPrice } = useSelector(
+    (state) => state.cart
+  );
 
   const handleSubmit = () => {
     if (!city || !location || !paymentMethod) {
@@ -43,6 +47,17 @@ function Payment() {
   return (
     <div className="payment-container">
       <h2>Payment Information</h2>
+      <div className="order-summary">
+        <p>
+          🛒 Items: <strong>{items.length}</strong>
+        </p>
+        <p>
+          🔢 Total Quantity: <strong>{totalQuantity}</strong>
+        </p>
+        <p>
+          💰 Total Price: <strong>${totalPrice.toFixed(2)}</strong>
+        </p>
+      </div>
 
       <label>Select Your City:</label>
       <select value={city} onChange={(e) => setCity(e.target.value)}>

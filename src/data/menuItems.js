@@ -48,6 +48,7 @@ const menuItems = [
     description: "Classic Neapolitan pizza with tomato, mozzarella, and basil.",
     price: 20.5,
     image: pizza,
+    itemsAvaliable: 5,
   },
   {
     id: 2,
@@ -55,6 +56,7 @@ const menuItems = [
     description: "Roll of vinegared rice with fresh salmon and avocado.",
     price: 13.0,
     image: sushi,
+    itemsAvaliable: 5,
   },
   {
     id: 3,
@@ -62,6 +64,7 @@ const menuItems = [
     description: "Spiced chicken roasted in a clay oven.",
     price: 12.75,
     image: tandoori,
+    itemsAvaliable: 5,
   },
   {
     id: 4,
@@ -69,6 +72,7 @@ const menuItems = [
     description: "Soft tortillas filled with seasoned beef and toppings.",
     price: 10.0,
     image: beeftacos,
+    itemsAvaliable: 5,
   },
   {
     id: 5,
@@ -76,6 +80,7 @@ const menuItems = [
     description: "Flaky, buttery French pastry.",
     price: 4.5,
     image: croissant,
+    itemsAvaliable: 5,
   },
   {
     id: 6,
@@ -83,6 +88,7 @@ const menuItems = [
     description: "Stir-fried noodles with shrimp, peanuts, and lime.",
     price: 11.2,
     image: padthai,
+    itemsAvaliable: 5,
   },
   {
     id: 7,
@@ -90,6 +96,7 @@ const menuItems = [
     description: "Fermented spicy cabbage.",
     price: 4.9,
     image: kimchi,
+    itemsAvaliable: 5,
   },
   {
     id: 8,
@@ -98,6 +105,7 @@ const menuItems = [
       "Sweet dessert with nuts and honey between filo pastry layers.",
     price: 6.75,
     image: baklava,
+    itemsAvaliable: 5,
   },
   {
     id: 9,
@@ -105,6 +113,7 @@ const menuItems = [
     description: "Dumplings filled with potatoes, cheese, or meat.",
     price: 8.2,
     image: pierogi,
+    itemsAvaliable: 5,
   },
   {
     id: 10,
@@ -112,6 +121,7 @@ const menuItems = [
     description: "Crispy duck served with pancakes and hoisin sauce.",
     price: 15.0,
     image: pekingduck,
+    itemsAvaliable: 5,
   },
   {
     id: 11,
@@ -119,6 +129,7 @@ const menuItems = [
     description: "Deep-fried chickpea balls served in pita.",
     price: 7.5,
     image: falafel,
+    itemsAvaliable: 5,
   },
   {
     id: 12,
@@ -126,6 +137,7 @@ const menuItems = [
     description: "Saffron rice with seafood and meats.",
     price: 14.6,
     image: paella,
+    itemsAvaliable: 5,
   },
   {
     id: 13,
@@ -133,6 +145,7 @@ const menuItems = [
     description: "Grilled steak with chimichurri sauce.",
     price: 16.4,
     image: churrasco,
+    itemsAvaliable: 5,
   },
   {
     id: 14,
@@ -140,6 +153,7 @@ const menuItems = [
     description: "Hot and sour soup with shrimp and lemongrass.",
     price: 9.8,
     image: tomyup,
+    itemsAvaliable: 5,
   },
   {
     id: 15,
@@ -147,6 +161,7 @@ const menuItems = [
     description: "Beef noodle soup with herbs and spices.",
     price: 10.95,
     image: phov,
+    itemsAvaliable: 5,
   },
   {
     id: 16,
@@ -154,6 +169,7 @@ const menuItems = [
     description: "Slow-cooked beef in coconut milk and spices.",
     price: 13.8,
     image: rendang,
+    itemsAvaliable: 5,
   },
   {
     id: 17,
@@ -161,6 +177,7 @@ const menuItems = [
     description: "Layered eggplant, ground meat, and béchamel sauce.",
     price: 11.7,
     image: moussaka,
+    itemsAvaliable: 5,
   },
   {
     id: 18,
@@ -168,6 +185,7 @@ const menuItems = [
     description: "Fragrant spiced rice with meat or vegetables.",
     price: 12.0,
     image: biryani,
+    itemsAvaliable: 5,
   },
   {
     id: 19,
@@ -175,6 +193,7 @@ const menuItems = [
     description: "Fresh fish cured in citrus juices with onions and chilies.",
     price: 10.1,
     image: ceviche,
+    itemsAvaliable: 5,
   },
   {
     id: 20,
@@ -182,6 +201,7 @@ const menuItems = [
     description: "Hearty stew of beef and paprika.",
     price: 9.9,
     image: goulash,
+    itemsAvaliable: 5,
   },
   {
     id: 21,
@@ -189,6 +209,7 @@ const menuItems = [
     description: "Minced meat with mashed potatoes baked on top.",
     price: 8.75,
     image: shepherd,
+    itemsAvaliable: 10,
   },
   {
     id: 22,
@@ -196,6 +217,7 @@ const menuItems = [
     description: "Grilled beef patty with lettuce, tomato, and bun.",
     price: 9.2,
     image: hamburger,
+    itemsAvaliable: 10,
   },
   {
     id: 23,
@@ -203,6 +225,7 @@ const menuItems = [
     description: "Assorted steamed dumplings.",
     price: 7.95,
     image: dimsum,
+    itemsAvaliable: 10,
   },
   {
     id: 24,
@@ -210,6 +233,7 @@ const menuItems = [
     description: "Baked pastry with meat or cheese filling.",
     price: 7.0,
     image: empanadas,
+    itemsAvaliable: 10,
   },
   {
     id: 25,
@@ -217,6 +241,7 @@ const menuItems = [
     description: "Spicy noodle soup with coconut milk.",
     price: 11.0,
     image: laksa,
+    itemsAvaliable: 10,
   },
   {
     id: 26,
@@ -224,6 +249,7 @@ const menuItems = [
     description: "Fries topped with cheese curds and gravy.",
     price: 7.3,
     image: poutine,
+    itemsAvaliable: 10,
   },
   {
     id: 27,
@@ -231,6 +257,7 @@ const menuItems = [
     description: "Savory pancake with cabbage and meat.",
     price: 9.4,
     image: okonomiyaki,
+    itemsAvaliable: 10,
   },
   {
     id: 28,
@@ -238,6 +265,7 @@ const menuItems = [
     description: "Tomato-based rice dish with spices.",
     price: 8.5,
     image: jollof,
+    itemsAvaliable: 10,
   },
   {
     id: 29,
@@ -245,6 +273,7 @@ const menuItems = [
     description: "Grilled skewered meat.",
     price: 9.6,
     image: kebab,
+    itemsAvaliable: 10,
   },
   {
     id: 30,
@@ -252,6 +281,7 @@ const menuItems = [
     description: "Semolina dish with vegetables and lamb.",
     price: 10.7,
     image: couscous,
+    itemsAvaliable: 10,
   },
   {
     id: 31,
@@ -259,6 +289,7 @@ const menuItems = [
     description: "Cornmeal cakes filled with cheese or meat.",
     price: 7.2,
     image: arepas,
+    itemsAvaliable: 10,
   },
   {
     id: 32,
@@ -266,6 +297,7 @@ const menuItems = [
     description: "Black bean stew with pork.",
     price: 11.3,
     image: feijoada,
+    itemsAvaliable: 10,
   },
   {
     id: 33,
@@ -273,6 +305,7 @@ const menuItems = [
     description: "French baguette with pork, pickles, and herbs.",
     price: 8.6,
     image: banhmi,
+    itemsAvaliable: 10,
   },
   {
     id: 34,
@@ -280,6 +313,7 @@ const menuItems = [
     description: "Breaded pork cutlet with curry sauce.",
     price: 12.4,
     image: kastucurry,
+    itemsAvaliable: 10,
   },
   {
     id: 35,
@@ -287,6 +321,7 @@ const menuItems = [
     description: "Thin pancakes with sweet or savory fillings.",
     price: 6.4,
     image: crepes,
+    itemsAvaliable: 10,
   },
   {
     id: 36,
@@ -294,6 +329,7 @@ const menuItems = [
     description: "Potato dumplings with tomato sauce.",
     price: 9.1,
     image: gnocchi,
+    itemsAvaliable: 10,
   },
   {
     id: 37,
@@ -301,6 +337,7 @@ const menuItems = [
     description: "Crab in spicy tomato chili sauce.",
     price: 18.5,
     image: chillicrab,
+    itemsAvaliable: 10,
   },
   {
     id: 38,
@@ -308,6 +345,7 @@ const menuItems = [
     description: "Eggs poached in spicy tomato sauce.",
     price: 8.4,
     image: shakshuka,
+    itemsAvaliable: 10,
   },
   {
     id: 39,
@@ -315,6 +353,7 @@ const menuItems = [
     description: "Mixed rice with vegetables and egg.",
     price: 9.7,
     image: bibimbap,
+    itemsAvaliable: 10,
   },
   {
     id: 40,
@@ -322,6 +361,7 @@ const menuItems = [
     description: "Stewed vegetables with herbs.",
     price: 8.9,
     image: ratatouille,
+    itemsAvaliable: 10,
   },
 ];
 

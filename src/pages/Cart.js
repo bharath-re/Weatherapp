@@ -46,10 +46,20 @@ function Cart() {
                 <img src={item.image} alt={item.name} className="item-image" />
                 <div className="item-details">
                   <span>{item.name}</span>
-                  <div className="quantity-controls">
-                    <button onClick={() => handleDecrease(item.id)}>-</button>
-                    <span>{item.quantity}</span>
-                    <button onClick={() => handleIncrease(item.id)}>+</button>
+                  <div className="qty-control-container">
+                    <button
+                      className="qty-circle-btn"
+                      onClick={() => handleDecrease(item.id)}
+                    >
+                      -
+                    </button>
+                    <span className="qty-value">{item.quantity}</span>
+                    <button
+                      className="qty-circle-btn"
+                      onClick={() => handleIncrease(item.id)}
+                    >
+                      +
+                    </button>
                   </div>
                 </div>
                 <span className="item-total">

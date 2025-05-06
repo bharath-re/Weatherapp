@@ -98,3 +98,37 @@
     transform: translateY(-2px);
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
 }
+
+.qty-control-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 12px 0;
+}
+
+.qty-circle-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.qty-circle-btn:hover {
+    background-color: #e0e0e0;
+    border-color: #999;
+}
+
+.qty-value {
+    font-size: 18px;
+    font-weight: 600;
+    min-width: 32px;
+    text-align: center;
+    color: #222;
+}
