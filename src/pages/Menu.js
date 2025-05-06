@@ -3,16 +3,13 @@ import menuItems from "../data/menuItems";
 import "../styles/Menu.css";
 import MenuCard from "../components/MenuCard";
 import SearchBar from "../components/SearchBar";
+import { useSelector } from "react-redux";
 
 function Menu() {
+  const { totalQuantity } = useSelector((state) => state.cart);
   const [searchQuery, setSearchQuery] = useState("");
   const [filter, setFilter] = useState("");
-  const [cart, setCart] = useState([]);
 
-  const handleAddToCart = (item) => {
-    setCart((prevCart) => [...prevCart, item]);
-    alert(`${item.name} added to cart!`);
-  };
   const filteredItems = menuItems.filter((item) =>
     item.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
@@ -39,15 +36,11 @@ function Menu() {
         filter={filter}
         setFilter={setFilter}
       />
-      <p>Total Items in Cart: {cart.length}</p>
+      <p>Total Items in Cart: {totalQuantity}</p>
 
       <div className="menu-grid">
         {sortedMenuItems.map((item) => (
-          <MenuCard
-            key={item.id}
-            item={item}
-            handleAddToCart={handleAddToCart}
-          />
+          <MenuCard key={item.id} item={item} />
         ))}
       </div>
     </>
