@@ -9,6 +9,7 @@ import {
   GiftCards,
   Home,
   Locations,
+  Payment,
   Reservations,
   Rewards,
   SignIn,
@@ -30,6 +31,7 @@ function App() {
         <Route path="/Careers" element={<Careers />} />
         <Route path="/Rewards" element={<Rewards />} />
         <Route path="/Cart" element={<Cart />} />
+        <Route path="/payment" element={<Payment />} />
         <Route path="/*" element={<ErrorPage />} />
       </Routes>
     </Router>

@@ -1,0 +1,45 @@
+.locations-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.locations-container h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.location-card {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.location-card:hover {
+    background-color: #ffe8cc;
+    transform: scale(1.05);
+}
+
+.location-card.selected {
+    background-color: #ff7f00;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.location-message {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    color: #28a745;
+}

@@ -5,9 +5,11 @@ import {
   subtractQuantity,
 } from "../slices/CartSlice";
 import "../styles/Cart.css";
+import { Link, useNavigate } from "react-router-dom";
 
 function Cart() {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const { items, totalPrice, totalQuantity } = useSelector(
     (state) => state.cart
   );
@@ -24,6 +26,13 @@ function Cart() {
     dispatch(subtractQuantity(id));
   };
 
+  const handleContinue = () => {
+    if (totalQuantity > 1) {
+      navigate("/payment");
+    } else {
+      alert("Please select atleast 1 item");
+    }
+  };
   return (
     <div className="cart-container">
       <h2>Your Cart</h2>
@@ -55,12 +64,22 @@ function Cart() {
               </li>
             ))}
           </ul>
+          <div>
+            <Link to="/menu" className="need-more-items-link">
+              Need More Items
+            </Link>
+          </div>
           <div className="cart-summary">
-            <p>Total Items: {totalQuantity}</p>
-            <p>Total Price: ${totalPrice.toFixed(2)}</p>
+            <p className="cart-container-price">Total Items: {totalQuantity}</p>
+            <p className="cart-container-price">
+              Total Price: ${totalPrice.toFixed(2)}
+            </p>
           </div>
         </>
       )}
+      <button className="continue-btn" onClick={handleContinue}>
+        Continue
+      </button>
     </div>
   );
 }

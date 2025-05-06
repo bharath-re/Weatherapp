@@ -1,0 +1,59 @@
+.payment-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    font-family: "Segoe UI", sans-serif;
+}
+
+.payment-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.payment-container label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+.payment-container select,
+.payment-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.payment-options {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.payment-options label {
+    font-weight: normal;
+}
+
+.confirm-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.confirm-btn:hover {
+    background-color: #218838;
+}

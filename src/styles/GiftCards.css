@@ -1,0 +1,55 @@
+.giftcards-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.giftcards-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.giftcard-item {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.giftcard-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.giftcard-details h3 {
+    color: #28a745;
+    font-size: 1.5rem;
+}
+
+.giftcard-details p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.purchase-btn {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+.purchase-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}

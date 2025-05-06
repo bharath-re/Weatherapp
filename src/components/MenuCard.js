@@ -19,6 +19,7 @@ function MenuCard({ item }) {
 
   const handleAddToCart = () => {
     dispatch(addToCart({ ...item, quantity }));
+    setQuantity(0);
   };
 
   return (

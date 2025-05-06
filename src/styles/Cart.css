@@ -45,3 +45,56 @@
     cursor: pointer;
     border-radius: 4px;
 }
+
+.need-more-items-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    /* Bootstrap blue */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.need-more-items-link:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+.cart-container {
+    text-align: left;
+}
+
+.cart-container-price {
+    text-align: right;
+}
+
+.continue-btn {
+    display: block;
+    margin: 40px auto 0;
+    padding: 16px 0;
+    width: 90%;
+    max-width: 400px;
+    background-color: #ff7f00;
+    /* Burger King orange */
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.continue-btn:hover {
+    background-color: #e66900;
+    /* Slightly darker on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+}
