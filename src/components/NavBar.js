@@ -2,8 +2,11 @@
 import React from "react";
 import "../styles/NavBar.css";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 function NavBar() {
+  const totalQuantity = useSelector((state) => state.cart.totalQuantity);
+
   return (
     <nav className="navbar">
       <div className="navbar-left">
@@ -19,10 +22,10 @@ function NavBar() {
       </div>
       <div className="navbar-right">
         <Link to="/signin">Sign In</Link>
-        <Link to="/cart">Cart</Link>
-        <button className="order-button">
-          <Link to="/menu"> Order Now</Link>
-        </button>
+        <Link to="/cart">Cart{totalQuantity > 0 && ` (${totalQuantity})`}</Link>
+        <Link to="/menu" className="order-button">
+          Order Now
+        </Link>
       </div>
     </nav>
   );
