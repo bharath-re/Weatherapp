@@ -1,10 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Cart, Home, ProductDetail, ProductsList } from "./components";
+import { Cart, Home, Navbar, ProductDetail, ProductsList } from "./components";
 
 function App() {
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/products" element={<ProductsList />} />
